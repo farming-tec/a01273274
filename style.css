@@ -1,0 +1,10 @@
+body{
+    background: lawngreen;
+}
+
+input, select{
+    display: block;
+    margin: 0 auto;
+    padding: 18px;
+    font-size: 18px;
+}
