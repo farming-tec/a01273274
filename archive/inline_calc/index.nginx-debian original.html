@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to nginx!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Anchor Tag -->
+    <!-- Referencia absoluta -->
+    <a href="https://google.com">Hola</a>
+
+    <!-- Referencias relativas -->
+    <!-- Sitios no single-page APP -->
+    <a href="./page.html">Página</a>
+
+    <!-- React -->
+    <!-- Vue -->
+    <!-- Angular -->
+    <!-- Prioridad es una sigle page, solo documento de HTML -->
+    <!-- 
+        JS -> Se genera el código HTML, Las ventajas: Menos carga del servidor, menos información
+        a compartir a través de la red(Internet)
+
+        JS -> La carga de trabajo la absorbe el Usuario (Móvil, slow)
+     -->
+
+     <form action="http://localhost:4000" method="get"  id="MyBtn">
+        <!-- ID => Identificar en el DOM -->
+        <!-- name => Identificar en el formulario/servidor -->
+        <label for="MyInputText">Nombre:</label>
+        <input type="text" name="name" id="MyInputText" class="input">
+
+        <label>
+            Last Name:
+            <input type="text" name="last_name" class="input">
+        </label>
+
+        <label>
+            Dirección:
+            <input type="text" name="address" class="input">
+        </label>
+        
+        <label>
+            Edad
+            <input type="number" name="age" class="input">
+        </label>
+        
+        <label>
+            Seleccionar archivo
+            <input type="file" name="file" class="input">
+        </label>
+
+        <input type="submit" value="Enviar">
+     </form>
+
+    <h1 id="Result">
+
+    </h1>
+    <!-- DOM, va cargar antes la página -->
+    <!-- Prioridad ante los buscadores WEB -->
+    <script src="main.js"></script>
+</body>
+</html>

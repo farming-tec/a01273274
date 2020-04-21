@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to nginx!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Anchor Tag -->
+    <!-- Referencia absoluta -->
+    <a href="https://google.com">Hola</a>
+
+    <!-- Referencias relativas -->
+    <!-- Sitios no single-page APP -->
+    <a href="./page.html">Página</a>
+
+    <!-- React -->
+    <!-- Vue -->
+    <!-- Angular -->
+    <!-- Prioridad es una sigle page, solo documento de HTML -->
+    <!-- 
+        JS -> Se genera el código HTML, Las ventajas: Menos carga del servidor, menos información
+        a compartir a través de la red(Internet)
+
+        JS -> La carga de trabajo la absorbe el Usuario (Móvil, slow)
+     -->
+
+    <form action="static.html" method="get"  id="operaciones">       
+        <label>
+            X
+            <input type="number" name="x" class="input">
+        </label>
+        <label>
+            Y
+            <input type="number" name="y" class="input">
+        </label>
+        <input type="submit" value="Enviar">
+    </form>
+    <label for="operaciones">
+        Seleccionar operación:
+        <select id="operaciones" name="lista_operaciones" form="operaciones">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select>
+    </label>
+
+    <h1 id="Result">
+
+    </h1>
+    <!-- DOM, va cargar antes la página -->
+    <!-- Prioridad ante los buscadores WEB -->
+    <script src="main.js"></script>
+</body>
+</html>

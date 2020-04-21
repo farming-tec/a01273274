@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="/" method="post" id="form">
+        <input type="number" name="x" id="xInput" >
+        <input type="number" name="y" id="yInput" >
+        <select name="operation" id="operation">
+            <option value="0">Suma</option>
+            <option value="1">Resta</option>
+            <option value="2">Multiplicación</option>
+            <option value="3">División</option>
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <div>
+        Result: <span id="result"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

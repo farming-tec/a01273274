@@ -1,0 +1,60 @@
+[10:46 AM] Isaac Planter Villalobos
+    
+
+ 
+<!DOCTYPEhtml>
+<html>
+<head>
+<title>Calculator</title>
+</head>
+ 
+<body>
+<form name="formcalc">
+        Number 1:<input type="text" name ="txtnum1">
+<br>
+        Number 2:<input type="text" name ="txtnum2">
+<br>
+        Result :<input type="text" name="txtres"><br>
+ 
+<input type="button" value="Calculate" onclick="sumValues()">
+ 
+</form>
+ 
+<!-- JS, en embedded -->
+<!-- JS es inseguro, No se recomienda utilizardo en los archivos HTML -->
+<!-- Hace más complejo la lógica y el marcado: Se junta la capa de HTML con JS -->
+<!-- Hacer refactor, debuggin del codigo es más dificil -->
+<!-- Ataques, inyección por js en linea -->
+<script type="text/javascript">
+    // Uso de funciones
+    function sumValues(){
+        // Son de una manera global, el scope no lo respeta
+        var num1, num2, res;
+        // 
+        const num = 12; // inmutables <- No cambian su valor
+        let x = 16;
+
+
+        // Number -> Pasar los valores a números, sin importar si es entero o flotante
+        num1=Number(document.formcalc.txtnum1.value);
+        num2=Number(document.formcalc.txtnum2.value);
+        res=num1+num2;
+        document.formcalc.txtres.value=res;
+    }
+ 
+functionsubValues()
+    {
+varnum1, num2, res;
+num1=Number(document.formcalc.txtnum1.value);
+num2=Number(document.formcalc.txtnum2.value);
+res=num1-num2;
+document.formcalc.txtres.value=res;
+    }
+
+
+
+ 
+</script>
+</body>
+ 
+</html>

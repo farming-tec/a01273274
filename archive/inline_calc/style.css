@@ -1,0 +1,11 @@
+.input{
+    display: block;
+}
+
+input[type="file"].input{
+    display: none;
+}
+
+input[type="submit"]{
+    display: block;
+}
