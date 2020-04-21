@@ -47,7 +47,12 @@ async function localRequest(){
     const URL = 'http://localhost:4000/user/testing';
     const response = await fetch(URL);
     
+    // Regresar objetos
+    // TIP -> Tupple -> Lista no modificable, valores, mandar 
+    // Metadata
+
     // Inferred JSON return
+    // HTTP response code == 200, return parsed json response
     if(response.ok) return await response.json();
     return [];
 }
